@@ -1,12 +1,15 @@
 #!/bin/bash
 
+echo "Installing curl..."
+yum install -y curl
+
 echo "Installing glances..."
-yum install -y glances
+curl -L https://bit.ly/glances | /bin/bash
 
 echo "Installing pip bottle..."
 pip install bottle
 
-
+echo "Configuring glancesweb..."
 (
 cat <<EOF
 [Unit]
@@ -18,7 +21,6 @@ ExecStart = /usr/bin/glances  -w  -t  5
 WantedBy = multi-user.target
 EOF
 ) > /etc/systemd/system/glancesweb.service
-
 
 systemctl enable glancesweb
 
