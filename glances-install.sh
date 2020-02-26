@@ -27,4 +27,4 @@ systemctl enable glancesweb
 echo "Starting glancesweb..."
 systemctl start glancesweb
 
-echo "========Glancesweb started Port 61208========"
+echo "===Glancesweb started, Port 61208, use curl icanhazip.com==="
