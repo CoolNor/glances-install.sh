@@ -27,4 +27,4 @@ systemctl enable glancesweb
 echo "Starting glancesweb..."
 systemctl start glancesweb
 
-echo "=================Glancesweb started================"
+echo "========Glancesweb started Port 61208========"
