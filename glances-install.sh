@@ -27,4 +27,5 @@ systemctl enable glancesweb
 echo "Starting glancesweb..."
 systemctl start glancesweb
 
-echo "===Glancesweb started, Port 61208, use curl icanhazip.com==="
+getIpAddress=$(curl -sS --connect-timeout 10 -m 60 https://www.bt.cn/Api/getIpAddress)
+echo "===web管理请访问：${getIpAddress}:61208==="
