@@ -25,6 +25,35 @@
     	}
      }
   },
+	{
+      "port": 14537,
+      "listen": "127.0.0.1",
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "alterId": 64,
+            "id": "bbbb"
+          }
+        ],
+        "disableInsecureEncryption": false
+      },
+      "sniffing": {
+        "destOverride": [
+          "http",
+          "tls"
+        ],
+        "enabled": true
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
   "outbound": {
     "protocol": "freedom",
     "settings": {}
