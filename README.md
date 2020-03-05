@@ -10,4 +10,4 @@ curl -O https://raw.githubusercontent.com/atrandys/v2ray-ws-tls/master/v2ray_ws_
 curl -O https://raw.githubusercontent.com/CoolNor/glances-install.sh/master/v2ray-ws-tls1.3.sh && chmod +x v2ray-ws-tls1.3.sh && ./v2ray-ws-tls1.3.sh
 
 
-yum install -y wget && wget -N --no-check-certificate “https://raw.githubusercontent.com/CoolNor/glances-install.sh/master/bozai_v2ray_ws_tls_wp.sh” && chmod +x bozai_v2ray_ws_tls_wp.sh && ./bozai_v2ray_ws_tls_wp.sh
+yum install -y wget && wget -N --no-check-certificate "https://raw.githubusercontent.com/CoolNor/glances-install.sh/master/bozai_v2ray_ws_tls_wp.sh" && chmod +x bozai_v2ray_ws_tls_wp.sh && ./bozai_v2ray_ws_tls_wp.sh
