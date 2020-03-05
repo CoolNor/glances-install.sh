@@ -143,11 +143,16 @@ install_mysql(){
     green "  3.安装MySQL"
     green "==============="
     sleep 1
+    green "=======wget======="
     wget http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm
+    green "========rpm======="
     rpm -ivh mysql-community-release-el7-5.noarch.rpm
+    green "=======install mysql-server========"
     yum -y install mysql-server
+    green "========systemctl======="
     systemctl enable mysqld.service
     systemctl start  mysqld.service
+    green "========check======="
     if [ `yum list installed | grep mysql-community | wc -l` -ne 0 ]; then
     	green "【checked】 MySQL安装成功"
 		echo
